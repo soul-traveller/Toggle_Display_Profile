@@ -1,0 +1,62 @@
+name: Create Release Assets
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Delete auto-generated release assets
+        run: |
+          gh release delete-asset "${{ github.event.release.tag_name }}" "Source code (tar.gz)" || true
+          gh release delete-asset "${{ github.event.release.tag_name }}" "Source code (zip)" || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create clean archive (excluding export-ignore files)
+        run: |
+          # Create a temporary directory for clean files
+          mkdir -p release-temp
+          # Copy all files except those marked with export-ignore
+          git archive HEAD --format=tar | tar -x -C release-temp/
+          # Remove files/directories marked as export-ignore in .gitattributes
+          rm -f release-temp/*.log
+          rm -rf release-temp/_includes
+          rm -f release-temp/*.html
+          rm -f release-temp/*.yml
+          rm -f release-temp/robots.txt
+          rm -rf release-temp/docs/internal
+          rm -f release-temp/.gitignore
+
+          # Create a folder with the tag name and move files into it
+          mkdir -p "release-temp-tagged/toggle_display_profile-${{ github.event.release.tag_name }}"
+          mv release-temp/* "release-temp-tagged/toggle_display_profile-${{ github.event.release.tag_name }}/"
+
+          # Create the clean archives with the tagged folder
+          cd release-temp-tagged
+          tar -czf ../toggle_display_profile-${{ github.event.release.tag_name }}.tar.gz toggle_display_profile-${{ github.event.release.tag_name }}/
+          zip -r ../toggle_display_profile-${{ github.event.release.tag_name }}.zip toggle_display_profile-${{ github.event.release.tag_name }}/ -q
+          cd ..
+
+      - name: Upload tar.gz to release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: toggle_display_profile-${{ github.event.release.tag_name }}.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload zip to release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: toggle_display_profile-${{ github.event.release.tag_name }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
