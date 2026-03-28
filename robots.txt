@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://soul-traveller.github.io/Toggle_Display_Profile/sitemap.xml

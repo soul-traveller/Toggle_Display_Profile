@@ -1,0 +1,64 @@
+theme: jekyll-theme-cayman
+markdown: kramdown
+
+title: "Toggle Display Profile - ICC Profile Switcher for macOS"
+description: "Interactive bash scripts for quickly switching between ICC display profiles on macOS using ArgyllCMS dispwin. Supports multiple displays with persistent state and preselection for convenient toggling."
+author: "Knut Larsson"
+lang: en
+keywords:
+  - Toggle Display Profile
+  - ICC profile switcher
+  - ICC profile toggler
+  - display profile manager
+  - ArgyllCMS dispwin
+  - ArgyllCMS
+  - Argyll CMS
+  - argyll-cms
+  - argyllcms
+  - display calibration
+  - monitor calibration
+  - screen calibration
+  - ColorSync profiles
+  - ICC color profiles
+  - ICM color profiles
+  - macOS display profiles
+  - macOS color management
+  - Apple ColorSync
+  - display profile switching
+  - color profile toggle
+  - monitor profile switcher
+  - screen profile manager
+  - multi-display support
+  - dual monitor profiles
+  - secondary display profiles
+  - primary display profiles
+  - bash script
+  - shell script
+  - macOS bash automation
+  - terminal-based profile switching
+  - displayCAL profiles
+  - ColorMunki profiles
+  - SpyderX profiles
+  - i1Display Pro profiles
+  - i1Profiler profiles
+  - spectrophotometer calibration
+  - colorimeter calibration
+  - sRGB color space
+  - AdobeRGB color space
+  - D65 white point
+  - D50 white point
+  - gamma calibration
+  - luminance calibration
+  - cLUT-Matrix profiles
+  - matrix profiles
+  - XYZLUT profiles
+  - color management workflow
+  - display color accuracy
+  - monitor color accuracy
+  - screen color accuracy
+
+plugins:
+  - jekyll-sitemap
+
+url: "https://soul-traveller.github.io"
+baseurl: "/Toggle_Display_Profile"
