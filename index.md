@@ -68,8 +68,6 @@ Both scripts are identical in functionality and features, differing only in the 
 
 ### Automator Applications
 
-The Automator app files are compressed in file `Automator_app_files.dmg`:
-
 #### `Toggle Display Profile-Main.app`
 - **Target:** Primary Display
 - **Purpose:** macOS application wrapper for the Main script
@@ -89,7 +87,7 @@ The Automator app files are compressed in file `Automator_app_files.dmg`:
 **IMPORTANT:** Sometimes the Automator .app files may be interpreted by macOS as faulty when trying to run them. In this case a "damaged" error could appear because macOS applies a `com.apple.quarantine` attribute to downloaded files, which, when combined with signature changes during compression/extraction, triggers security.
 
 **If this happens:** Remove Quarantine Attribute 
-After downloading, run this command in Terminal to remove the restriction, replacing /path/to/app with the actual path to your Automator app:
+After downloading, run this command in Terminal to remove the restriction, replacing `/path/to/app` with the actual path to your Automator app file:
 
 ```bash
 xattr -dr com.apple.quarantine "/path/to/app/Toggle Display Profile.app"
