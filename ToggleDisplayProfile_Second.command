@@ -85,14 +85,18 @@ PROFILE_DIR="$HOME/Library/ColorSync/Profiles"
 PROFILES=(
     "ID160FH_120cdm2_D6500_sRGB_M-S_XYZLUT+MTX_1158_DCal_Colormunki_26.01.31-04.44.icc"
     "ID160FH_120cdm2_D5000_sRGB_S_XYZLUT+MTX_4954_DisplayCal_SpyderX_26.01.27-23.39.icc"
+    "ID160FH_80cdm2_D6500_GsRGB_cLUT_461_i1Profiler_i1DP_2026-03-28.icc"
+    "ID160FH_100cdm2_D6500_GsRGB_cLUT_461_i1Profiler_i1DP_2026-03-28.icc"
 )
 
 # DESCRIPTIONS:
 # Human-readable descriptions corresponding to PROFILES.
 # Array MUST be same length as PROFILES and same order.
 DESCRIPTIONS=(
-    " - ID160FH \n - AdobeRGB Color Space \n - D65 \n - 120 cd/m² \n - Gamma sRGB \n - cLUT-Matrix \n - Calibrated with DisplayCAL using ColorMunki. \n\nSet the following: \n - Screen settings: \n     - Brightness: 50 \n     - Contrast: 100 \n     - Tablet Brightness: 73 \n     - No RGB Available"
-    " - ID160FH \n - AdobeRGB Color Space \n - D05 \n - 120 cd/m² \n - Gamma sRGB \n - cLUT-Matrix \n - Calibrated with DisplayCAL using SpyderX. \n\nSet the following: \n - Screen settings: \n     - Brightness: 50 \n     - Contrast: 100 \n     - Tablet Brightness: 84 \n     - No RGB Available"
+    " - ID160FH \n - AdobeRGB Color Space \n - D65 \n - 120 cd/m² \n - Gamma sRGB \n - cLUT-Matrix \n - Calibrated with DisplayCAL using ColorMunki. \n\nSet the following: \n - Screen settings: \n     - Sorftware Brightness: 50 \n     - Sorftware Contrast: 100 \n     - Tablet Brightness: 73 \n     - No RGB Available"
+    " - ID160FH \n - AdobeRGB Color Space \n - D50 \n - 120 cd/m² \n - Gamma sRGB \n - cLUT-Matrix \n - Calibrated with DisplayCAL using SpyderX. \n\nSet the following: \n - Screen settings: \n     - Sorftware Brightness: 50 \n     - Sorftware Contrast: 100 \n     - Tablet Brightness: 84 \n     - No RGB Available"
+    " - ID160FH \n - AdobeRGB Color Space \n - D65 \n - 80 cd/m² \n - Gamma sRGB \n - cLUT \n - Calibrated with i1Profiler using i1Display Pro. \n\nSet the following: \n - Screen settings: \n     - Sorftware Brightness: 50 \n     - Sorftware Contrast: 100 \n     - Tablet Brightness: 43 \n     - No RGB Available"
+    " - ID160FH \n - AdobeRGB Color Space \n - D65 \n - 100 cd/m² \n - Gamma sRGB \n - cLUT \n - Calibrated with i1Profiler using i1Display Pro. \n\nSet the following: \n - Screen settings: \n     - Sorftware Brightness: 50 \n     - Sorftware Contrast: 100 \n     - Tablet Brightness: 63 \n     - No RGB Available"
 )
 
 # STATE_FILE:
