@@ -68,6 +68,8 @@ Both scripts are identical in functionality and features, differing only in the 
 
 ### Automator Applications
 
+The Automator app files are compressed in file `Automator_app_files.zip`. Make sure to read the **Important** note below.
+
 #### `Toggle Display Profile-Main.app`
 - **Target:** Primary Display
 - **Purpose:** macOS application wrapper for the Main script
