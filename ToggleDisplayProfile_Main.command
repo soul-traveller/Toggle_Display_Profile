@@ -2,7 +2,7 @@
 
 ###############################################################################
 # Toggle_Display_Profile.command
-# Version: 1.2
+# Version: 1.2.4
 # Author: Knut Larsson
 #
 # PURPOSE:
