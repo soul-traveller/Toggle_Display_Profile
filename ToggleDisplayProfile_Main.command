@@ -83,18 +83,106 @@ PROFILE_DIR="$HOME/Library/ColorSync/Profiles"
 # Array of ICC profile FILE NAMES (not full paths).
 # These will be combined with PROFILE_DIR.
 PROFILES=(
-    "BenQ T2200HD_120cdm2_D6500_sRGB_M-S_XYZLUT+MTX_1158_DCal_Colormunki_26.01.31-01.40.icc"
-    "BenQ T2200HD_120cdm2_D5000_sRGB_S_XYZLUT+MTX_4954_DisplayCal_SpyderX_26.01.28-16.5.icc"
-    "BenQ T2200HD_100cdm2_D6500_G2.2_MTX_461_i1Profiler_i1DP_2026-03-28.icc"
+    "SW2700_AdobeRGB_L100_D65_2.2_S_XYZLUT+MTX_1158_DCal_i1DP_26.04.01-11.44.icc"
+    "SW2700_sRGB_L100_D65_2.2_S_XYZLUT+MTX_1158_DCal_i1DP_26.04.01-10.38.icc"
+    "SW2700PT_Cal1_AdobeRGB_D65_L100_G22_Rel333_PME_i1DP_2026-04-01.icc"
+    "SW2700PT_Cal2_sRGB_D65_L100_G22_Rel333_PME_i1DP_2026-04-01.icc"
 )
 
 # DESCRIPTIONS:
 # Human-readable descriptions corresponding to PROFILES.
 # Array MUST be same length as PROFILES and same order.
 DESCRIPTIONS=(
-    " - BenQ T2200HD \n - sRGB Color Space \n - D65 \n - 120 cd/m² \n - Gamma sRGB \n - cLUT-Matrix \n - Calibrated with DisplayCAL using ColorMunki. \n\nSet the following: \n - Screen settings: \n     - Brightness: 50 \n     - Contrast: 83 \n     - Red: 89 \n     - Green: 88 \n     - Blue: 95"
-    " - BenQ T2200HD \n - sRGB Color Space \n - D50 \n - 120 cd/m² \n - Gamma sRGB \n - cLUT-Matrix \n - Calibrated with DisplayCAL using SpyderX. \n\nSet the following: \n - Screen settings: \n     - Brightness: 49 \n     - Contrast: 81 \n     - Red: 98 \n     - Green: 90 \n     - Blue: 88"
-    " - BenQ T2200HD \n - sRGB Color Space \n - D65 \n - 100 cd/m² \n - Gamma 2.2 \n - Matrix \n - Calibrated with i1Profiler using i1Display Pro. \n\nSet the following: \n - Screen settings: \n     - Brightness: 44 \n     - Contrast: 83 \n     - Red: 91 \n     - Green: 90 \n     - Blue: 96"
+$' - BenQ SW2700PT
+ - Color Space: AdobeRGB
+ - Whitepoint: D65
+ - Luminance: 100 cd/m²
+ - Gamma: 2.2
+ - Blackpoint 0.3 nits
+ - Type: Local SW XYZ LUT-Matrix, based on PME HW 3D LUT
+ - Calibrated with i1Display Pro using
+   - Palette Master Element (HW 3D LUT)
+   - DisplayCAL
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  65%
+ - Screen settings:
+     - Color Mode:  Calibration 1
+     - Brightness:  PME Calibrated
+     - Contrast:    PME Calibrated
+     - Red:         PME Calibrated
+     - Green:       PME Calibrated
+     - Blue:        PME Calibrated
+'
+
+$' - BenQ SW2700PT
+ - Color Space: sRGB
+ - Whitepoint: D65
+ - Luminance: 100 cd/m²
+ - Gamma: 2.2
+ - Blackpoint 0.3 nits
+ - Type: Local SW XYZ LUT-Matrix, based on PME HW 3D LUT
+ - Calibrated with i1Display Pro using
+   - Palette Master Element (HW 3D LUT)
+   - DisplayCAL
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  65%
+ - Screen settings:
+     - Color Mode:  Calibration 2
+     - Brightness:  PME Calibrated
+     - Contrast:    PME Calibrated
+     - Red:         PME Calibrated
+     - Green:       PME Calibrated
+     - Blue:        PME Calibrated
+'
+
+$' - BenQ SW2700PT
+ - Color Space: AdobeRGB
+ - Whitepoint: D65
+ - Luminance: 100 cd/m²
+ - Gamma: 2.2
+ - Blackpoint 0.3 nits
+ - Type: Local Matrix profile for HW 3D LUT
+ - Calibrated with i1Display Pro using
+   - Palette Master Element
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  65%
+ - Screen settings:
+     - Color Mode:  Calibration 1
+     - Brightness:  PME Calibrated
+     - Contrast:    PME Calibrated
+     - Red:         PME Calibrated
+     - Green:       PME Calibrated
+     - Blue:        PME Calibrated
+'
+
+$' - BenQ SW2700PT
+ - Color Space: sRGB
+ - Whitepoint: D65
+ - Luminance: 100 cd/m²
+ - Gamma: 2.2
+ - Blackpoint 0.3 nits
+ - Type: Local Matrix profile for HW 3D LUT
+ - Calibrated with i1Display Pro using
+   - Palette Master Element
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  65%
+ - Screen settings:
+     - Color Mode:  Calibration 2
+     - Brightness:  PME Calibrated
+     - Contrast:    PME Calibrated
+     - Red:         PME Calibrated
+     - Green:       PME Calibrated
+     - Blue:        PME Calibrated
+'
+
 )
 
 # STATE_FILE:

@@ -93,10 +93,97 @@ PROFILES=(
 # Human-readable descriptions corresponding to PROFILES.
 # Array MUST be same length as PROFILES and same order.
 DESCRIPTIONS=(
-    " - ID160FH \n - AdobeRGB Color Space \n - D65 \n - 120 cd/m² \n - Gamma sRGB \n - cLUT-Matrix \n - Calibrated with DisplayCAL using ColorMunki. \n\nSet the following: \n - Screen settings: \n     - Sorftware Brightness: 50 \n     - Sorftware Contrast: 100 \n     - Tablet Brightness: 73 \n     - No RGB Available"
-    " - ID160FH \n - AdobeRGB Color Space \n - D50 \n - 120 cd/m² \n - Gamma sRGB \n - cLUT-Matrix \n - Calibrated with DisplayCAL using SpyderX. \n\nSet the following: \n - Screen settings: \n     - Sorftware Brightness: 50 \n     - Sorftware Contrast: 100 \n     - Tablet Brightness: 84 \n     - No RGB Available"
-    " - ID160FH \n - AdobeRGB Color Space \n - D65 \n - 80 cd/m² \n - Gamma sRGB \n - cLUT \n - Calibrated with i1Profiler using i1Display Pro. \n\nSet the following: \n - Screen settings: \n     - Sorftware Brightness: 50 \n     - Sorftware Contrast: 100 \n     - Tablet Brightness: 43 \n     - No RGB Available"
-    " - ID160FH \n - AdobeRGB Color Space \n - D65 \n - 100 cd/m² \n - Gamma sRGB \n - cLUT \n - Calibrated with i1Profiler using i1Display Pro. \n\nSet the following: \n - Screen settings: \n     - Sorftware Brightness: 50 \n     - Sorftware Contrast: 100 \n     - Tablet Brightness: 63 \n     - No RGB Available"
+$' - XP-Pen Artist 16 Pro, ID160FH
+ - Color Space: AdobeRGB
+ - Whitepoint: D65
+ - Luminance: 120 cd/m²
+ - Gamma: sRGB
+ - Blackpoint 0.3 nits
+ - Type: Local SW XYZ LUT-Matrix
+ - Calibrated with i1Display Pro using
+   - DisplayCAL
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  100%
+     - Contrast:    100%
+ - Tablet settings:
+     - Color Mode:  Native/AdobeRGB
+     - Brightness:  73
+     - Contrast:    N/A
+     - Red:         N/A
+     - Green:       N/A
+     - Blue:        N/A
+'
+
+$' - XP-Pen Artist 16 Pro, ID160FH
+ - Color Space: AdobeRGB
+ - Whitepoint: D50
+ - Luminance: 120 cd/m²
+ - Gamma: sRGB
+ - Blackpoint 0.3 nits
+ - Type: Local SW XYZ LUT-Matrix
+ - Calibrated with SpyderX using
+   - DisplayCAL
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  100%
+     - Contrast:    100%
+ - Tablet settings:
+     - Color Mode:  Native/AdobeRGB
+     - Brightness:  84
+     - Contrast:    N/A
+     - Red:         N/A
+     - Green:       N/A
+     - Blue:        N/A
+'
+
+$' - XP-Pen Artist 16 Pro, ID160FH
+ - Color Space: AdobeRGB
+ - Whitepoint: D65
+ - Luminance: 80 cd/m²
+ - Gamma: sRGB
+ - Blackpoint 0.3 nits
+ - Type: Local SW XYZ LUT-Matrix
+ - Calibrated with i1Display Pro using
+   - i1Profiler
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  100%
+     - Contrast:    100%
+ - Tablet settings:
+     - Color Mode:  Native/AdobeRGB
+     - Brightness:  43
+     - Contrast:    N/A
+     - Red:         N/A
+     - Green:       N/A
+     - Blue:        N/A
+'
+
+$' - XP-Pen Artist 16 Pro, ID160FH
+ - Color Space: AdobeRGB
+ - Whitepoint: D65
+ - Luminance: 100 cd/m²
+ - Gamma: sRGB
+ - Blackpoint 0.3 nits
+ - Type: Local SW XYZ LUT-Matrix
+ - Calibrated with i1Display Pro using
+   - i1Profiler
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  100%
+     - Contrast:    100%
+ - Tablet settings:
+     - Color Mode:  Native/AdobeRGB
+     - Brightness:  63
+     - Contrast:    N/A
+     - Red:         N/A
+     - Green:       N/A
+     - Blue:        N/A
+'
 )
 
 # STATE_FILE:
