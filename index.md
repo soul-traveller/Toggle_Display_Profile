@@ -291,9 +291,9 @@ Before using the scripts, you need to configure them with your ICC profiles.
 
     ```bash
     PROFILES=(
-        "BenQ_T2200HD_sRGB_D65_120cdm2.icc"
-        "BenQ_T2200HD_AdobeRGB_D65_120cdm2.icc"
-        "BenQ_T2200HD_sRGB_D65_80cdm2.icc"
+        "BenQ_T2200HD_sRGB_D65_L120cdm2_G2.2_2026.02.15.icc"
+        "BenQ_T2200HD_AdobeRGB_D65_L120cdm2_G2.2_2026.02.15.icc"
+        "BenQ_T2200HD_sRGB_D65_L80cdm2_G2.2_2025.11.23.icc"
     )
     ```
 
@@ -305,10 +305,73 @@ Before using the scripts, you need to configure them with your ICC profiles.
   - Example:
 
     ```bash
-    DESCRIPTIONS=(
-        " - BenQ T2200HD \n - sRGB Color Space \n - D65 \n - 120 cd/m² \n - Gamma sRGB \n - cLUT-Matrix \n - Calibrated with DisplayCAL using ColorMunki. \n\nSet the following: \n - Screen settings: \n     - Brightness: 50 \n     - Contrast: 83 \n     - Red: 89 \n     - Green: 88 \n     - Blue: 95"
-        " - BenQ T2200HD \n - AdobeRGB Color Space \n - D65 \n - 120 cd/m² \n - Gamma 2.2 \n - Matrix \n - Calibrated with i1Profiler using i1Display Pro."
-    )
+DESCRIPTIONS=(
+$' - BenQ T2200HD
+ - Color Space: sRGB
+ - Whitepoint: D65
+ - Luminance: 120 cd/m²
+ - Gamma: 2.2
+ - Blackpoint: As Measured
+ - Type: Local SW XYZ LUT + Matrix
+ - Calibrated with i1Display Pro using
+   - DisplayCAL
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  100%
+ - Screen settings:
+     - Color Mode:  sRGB
+     - Brightness:  50%
+     - Contrast:    80%
+     - Red:         88%
+     - Green:       89%
+     - Blue:        95%
+'
+
+$' - BenQ T2200HD
+ - Color Space: AdobeRGB
+ - Whitepoint: D65
+ - Luminance: 120 cd/m²
+ - Gamma: 2.2
+ - Blackpoint: As Measured
+ - Type: Local SW XYZ LUT + Matrix
+ - Calibrated with i1Display Pro using
+   - DisplayCAL
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  100%
+ - Screen settings:
+     - Color Mode:  AdobeRGB
+     - Brightness:  50%
+     - Contrast:    80%
+     - Red:         88%
+     - Green:       89%
+     - Blue:        95%
+'
+
+$' - BenQ T2200HD
+ - Color Space: sRGB
+ - Whitepoint: D65
+ - Luminance: 80 cd/m²
+ - Gamma: 2.2
+ - Blackpoint: As Measured
+ - Type: Local SW XYZ LUT + Matrix
+ - Calibrated with i1Display Pro using
+   - DisplayCAL
+
+Set the following:
+ - Mac software settings:
+     - Brightness:  100%
+ - Screen settings:
+     - Color Mode:  sRGB
+     - Brightness:  50%
+     - Contrast:    80%
+     - Red:         88%
+     - Green:       89%
+     - Blue:        95%
+'
+)
     ```
 
 **Important:** The `DESCRIPTIONS` array **must** have the same number of entries as `PROFILES`, and the order must match exactly.
